@@ -12,7 +12,12 @@ string rtrim(const string &);
  */
 
 void staircase(int n) {
-
+    int numChar = 0;
+    int numSpaces = 0;
+    //count-controlled loop based on n.
+    //First line: print (n-1) spaces followed by the character in question.
+    //if n >1, print second line
+    //Second line: print newline, then (n-2) spaces followed by 2 characters (character count iterator?)
 }
 
 int main()
