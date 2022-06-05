@@ -28,7 +28,6 @@ void staircase(int n) {
         if ( i < (n-1)) {
             cout << endl;
         }
-
         //if n >1, print second line
         //Second line: print newline, then (n-2) spaces followed by 2 characters (character count iterator?)
     }
@@ -41,9 +40,10 @@ int main()
     getline(cin, n_temp);
 
     int n = stoi(ltrim(rtrim(n_temp)));
-
-    staircase(n);
-
+    if (n > 0 && n <= 100) {
+        staircase(n);
+    }
+    
     return 0;
 }
 
