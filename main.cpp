@@ -13,11 +13,26 @@ string rtrim(const string &);
 
 void staircase(int n) {
     int numChar = 0;
-    int numSpaces = 0;
+    int numSpaces = n;
     //count-controlled loop based on n.
-    //First line: print (n-1) spaces followed by the character in question.
-    //if n >1, print second line
-    //Second line: print newline, then (n-2) spaces followed by 2 characters (character count iterator?)
+    for (int i = 0; i < n; i++) {
+        //First line: print (n-1) spaces followed by the character in question.
+        numSpaces--;
+        for (int i = 0; i < numSpaces; i++) {
+            cout << " ";
+        }
+        numChar++;
+        for (int i = 0; i < numChar; i++) {
+            cout << '#';
+        }
+        if ( i < (n-1)) {
+            cout << endl;
+        }
+
+        //if n >1, print second line
+        //Second line: print newline, then (n-2) spaces followed by 2 characters (character count iterator?)
+    }
+
 }
 
 int main()
